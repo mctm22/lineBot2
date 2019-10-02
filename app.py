@@ -25,9 +25,9 @@ def callback():
    while True:
     userText = input('') 
     if (userText == 'สวัสดี') :
-        sendText(user('สวัสดีจร้า')
+        sendText(user,('สวัสดีจร้า')
     elif (userText == 'สบายดีมั๊ย') :
-        sendText(user('สบายดี')
+        sendText(user,('สบายดี')
     else :
         sendText(user('หิวไหม')
     return '',200
