@@ -23,15 +23,14 @@ def callback():
     user = decoded['originalDetectIntentRequest']['payload']['data']['replyToken']
     userText = decoded['queryResult']['intent']['displayName']
    while True:
-    Mint22 = input('') 
-    if (Mint22 == 'สวัสดี') :
-        print('สวัสดีจร้า')
-    elif (Mint22 == 'สบายดีมั๊ย') :
-        print('สบายดี')
+    userText = input('') 
+    if (userText == 'สวัสดี') :
+        sendText(user('สวัสดีจร้า')
+    elif (userText == 'สบายดีมั๊ย') :
+        sendText(user('สบายดี')
     else :
-        print('หิวไหม')
+        sendText(user('หิวไหม')
     return '',200
-
 def sendText(user, text):
   LINE_API = 'https://api.line.me/v2/bot/message/reply'
   headers = {
